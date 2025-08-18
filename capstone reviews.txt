@@ -1,0 +1,44 @@
+C2C430 - Predictive Devops - Forecasting Build and Deployment Failures
+
+30833 
+33015
+31935
+32931
+
+
+C2C431 - RealTime Error Diagnosis and notification system for deployed applications in CD Environments.
+2200032985	Rohit   Ranjan
+2200031253	VALLURU  TANMAYEE - Internship
+2200031287	UNNAM  MADHAVI
+2200033138	KONGARA  AVINASH
+
+
+
+C2C432 - ENHANCING microservice reliability via automated interface testing in CI/CD workflow.
+
+2200030643	VALETI  PRAVEENA
+2200032704	GARAPATI  CHARISHMA
+2200032748	HRISHABH
+2200032880	NITHIN  SAI POTNURU
+
+C2C-433 - A hybrid AI framework for RealTime anomaly Detection.
+
+
+
+
+
+C2C-434 Implementation of an Authentication Layer in DevOps-Driven API Gateway Management Systems.
+
+2200030731	NIMMAGADDA LAKSHMI SARVANI
+2200030214	YALLAVULA BINDU BHARGAVI
+2200031037	APPASANI  BHASKAR
+2200032460	CHAITANYA  MANTRI
+
+C2C-435 - DevOps pipeline for legacy system modernization
+2200030983	MAKAM MANIKYA KARUNYA
+2200031001	SRI LALITHA TALLURI	
+2200031350	VEGULLA VENKATA RAMANA
+2200032269	NARA DHANU SREE
+
+
+

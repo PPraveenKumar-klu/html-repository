@@ -1,0 +1,35 @@
+*{
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: tomato;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width : 500px) {
+    h1{
+        font-size: 1rem;
+        color : red;
+    }
+
+    h2{
+        font-size: 5rem;
+        color : greenyellow;
+    }
+}

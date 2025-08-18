@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWD Layout Demo with Hamburger</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Base styling */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+      }
+
+      /* HEADER */
+      .header-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: #f5f5f5;
+        border-bottom: 2px solid black;
+        flex-wrap: wrap;
+        position: relative;
+      }
+
+      .logo-div {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      /* NAVIGATION */
+      .nav-div ul {
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-div ul li {
+        list-style: none;
+        cursor: pointer;
+      }
+
+      /* HAMBURGER ICON */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+      }
+      .hamburger div {
+        width: 25px;
+        height: 3px;
+        background: #333;
+      }
+
+      /* HERO IMAGE */
+      .my-div {
+        width: 100%;
+        min-height: 50vh;
+        background-image: url("images/tiger1.jpg"); /* Adjust path */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+
+      .hero-div{
+        width: 100%;
+        background-image: url('https://images.unsplash.com/photo-1626808642875-0aa545482dfb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D');
+        min-height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 10px;
+      }
+
+      /* MAIN CONTENT */
+      main {
+        background-color: beige;
+        padding: 20px;
+        font-size: 1rem;
+      }
+
+      .card-div {
+        display: flex;
+        column-rule: 1px solid salmon;
+        flex-wrap: wrap;
+      }
+
+      .card-div .card {
+        width: 33%;
+        border: 1px solid goldenrod;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2rem;
+      }
+
+      /* RESPONSIVE STYLES */
+      @media screen and (max-width: 768px) {
+        /* Show hamburger */
+        .hamburger {
+          display: flex;
+        }
+
+        /* Hide nav by default */
+        .nav-div {
+          display: none;
+          width: 100%;
+          background: #f5f5f5;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          border-top: 1px solid #ccc;
+        }
+
+        /* Vertical nav list */
+        .nav-div ul {
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+        }
+        .nav-div ul li {
+          padding: 10px;
+          border-bottom: 1px solid #ccc;
+          width: 100%;
+        }
+
+        /* Show nav when active */
+        .nav-div.active {
+          display: block;
+        }
+
+        .card-div {
+          display: flex;
+          gap: 10px;
+          background-color: azure;
+        }
+
+        .card {
+          flex: 1 1 calc(33.333% - 10px);
+          background-color: goldenrod;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header-div">
+      <div class="logo-div">LOGO</div>
+
+      
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="nav-div" id="navMenu">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Portfolio</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="my-div"></div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam maiores
+        illo maxime fugiat tenetur minima quos officiis dolorum porro. Deserunt
+        nostrum maxime rerum repudiandae perferendis adipisci iure doloremque
+        corrupti doloribus!
+      </p>
+    </main>
+
+    <h2>Multiple Cards</h2>
+    <div class="card-div">
+        
+      <div class="card">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+        veniam!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium tenetur voluptatibus ipsam eos? Similique quam pariatur, nisi atque, animi necessitatibus ullam sed iste numquam, blanditiis corporis iusto deleniti quo!100
+
+      </div>
+      <div class="card">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+        veniam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, error. Ipsum tempora fuga alias soluta quibusdam voluptatem excepturi, accusantium dicta amet adipisci voluptas corrupti error commodi, deserunt ratione sapiente magnam voluptates ducimus quis, nihil distinctio rem? Animi non, sunt quis possimus autem aliquid. Nesciunt maxime blanditiis deserunt impedit officia est sint doloribus veritatis nobis ratione et nostrum beatae, laborum modi incidunt dolores vel, iure delectus cum 
+      </div>
+      <div class="card">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+        veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eos nisi iusto quis, iure ea. Rerum, dolorem quas. Incidunt unde sapiente esse hic, ea corporis, magnam ipsam qui quos facere praesentium quo! Sequi enim esse dicta deleniti exercitationem! Dolorem commodi culpa consectetur atque, molestias nihil quaerat exercitationem sit dolore eos!
+      </div>
+    </div>
+
+    <div class="hero-div">sdss</div>
+
+    <!-- FOOTER -->
+    <footer>This is the footer of the website</footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

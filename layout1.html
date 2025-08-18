@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        *{
+            margin : 0px;
+            padding : 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrapper{
+            margin : 15px;
+            border: 2px solid black;
+        }
+        .logo-div{
+            font-size: 1.2rem;
+            color : orange;
+            background-color: beige;
+            padding : 20px;
+            margin-bottom: 10px;
+        }
+
+        .navbar{
+            font-size: 1.5rem;
+            background-color: aqua;
+            padding : 20px;
+            text-align: center;
+        }
+
+        header{
+           background-color: tomato;
+           padding : 20px;
+           margin-top : 10px;
+           text-align: center;
+           font-size: large;
+           font-weight: 700;
+        }
+
+        .sidebar-div{
+            width:25%;
+            min-height: 400px;
+            background-color: red;
+            margin-right: 10px;
+            line-height: 400px;
+            text-align: center;
+            
+        }
+
+        .main-div{
+            width:75%;
+            min-height: 400px;
+            background-color: greenyellow;
+            line-height: 400px;
+            text-align: center;
+        }
+        .aside-main-div{
+            display: flex;
+            margin-top:10px;
+             justify-content: center;
+            align-items: center;
+        }
+
+        footer{
+            background-color: lightskyblue;
+            margin-top:10px;
+            align-items: center;
+            padding : 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="logo-div">Logo</div>
+    <nav class="navbar">Navigation</nav>
+    <header>Header/Banner</header>
+    <div class="aside-main-div">
+        <aside class="sidebar-div"">Sidebar</aside>
+        <main class="main-div">Body Area</main>
+    </div>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>

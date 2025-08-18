@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-screen flex bg-amber-400">
+    <div class="bg-amber-400">
+      
+      <div class="flex space-x-5 justify-center">
+        <div class="text-2xl font-bold m-5 p-2">Logo</div>
+
+        <div class="text-2xl m-5 p-2 flex justify-end">
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Tailwind Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Row 1: Header -->
+    <header class="bg-gray-800 text-white">
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <div class="text-2xl font-bold">MyLogo</div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-amber-300">Home</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Services</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-300">☰</button>
+      </div>
+    </header>
+
+    <!-- Row 2: Hero -->
+    <section class="bg-blue-500 text-white py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Welcome to Our Website
+      </h1>
+      <p class="text-lg md:text-xl mb-6">
+        We build amazing things with Tailwind CSS.
+      </p>
+      <a
+        href="#"
+        class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100"
+        >Get Started</a
+      >
+    </section>
+
+    <!-- Row 3: About Us -->
+    <section class="max-w-5xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+      <p class="text-center text-gray-600 leading-relaxed">
+        We are a team of passionate developers and designers building responsive
+        and modern web solutions. Our mission is to deliver quality products and
+        create value for our clients.
+      </p>
+    </section>
+
+    <!-- Row 4: Three Cards -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-6xl mx-auto grid gap-8 px-4 md:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-full shadow-lg p-6 text-center">
+          <h3 class="text-xl font-semibold mb-4">Service One</h3>
+          <p class="text-gray-600 mb-4">
+            High-quality web development with modern technologies.
+          </p>
+          <a href="#" class="text-blue-500 font-medium hover:underline"
+            >Learn More</a
+          >
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-full shadow-lg p-6 text-center">
+          <h3 class="text-xl font-semibold mb-4">Service Two</h3>
+          <p class="text-gray-600 mb-4">
+            Creative design solutions tailored to your needs.
+          </p>
+          <a href="#" class="text-blue-500 font-medium hover:underline"
+            >Learn More</a
+          >
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+          <h3 class="text-xl font-semibold mb-4">Service Three</h3>
+          <p class="text-gray-600 mb-4">
+            Reliable maintenance and ongoing support for your projects.
+          </p>
+          <a href="#" class="text-blue-500 font-medium hover:underline"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 5: Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+      <div class="max-w-7xl mx-auto text-center">
+        &copy; 2025 MyWebsite. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
