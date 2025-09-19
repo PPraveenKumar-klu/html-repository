@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: none;
+}
