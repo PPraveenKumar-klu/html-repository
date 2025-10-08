@@ -1,0 +1,49 @@
+import React from "react";
+import { useState } from "react";
+const url = "https://jsonplaceholder.typicode.com/users";
+
+const FetchAPIExample = () => {
+  const [users, setUsers] = useState([]);
+  const urlHandler = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setUsers(data);
+    console.log(data);
+  };
+  return (
+    <>
+      <h1>From FetchAPIExample</h1>
+      <button className="btn btn-primary" type="button" onClick={urlHandler}>
+        Fetch Data
+      </button>
+      <table className="table table-striped table-bordered ms-5 me-5 w-75 mt-3">
+        <thead className="table-warning">
+          <tr>
+            <td>ID</td>
+            <td>name</td>
+            <td>userName</td>
+            <td>email</td>
+            <td>Street Address</td>
+            <td>Geo Location</td>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td>{user.id}</td>
+              <td>{user.name}</td>
+              <td>{user.username}</td>
+              <td>{user.email}</td>
+              <td>{user.address.street}</td>
+              <td>
+                {user.address.geo.lat}, {user.address.geo.lng}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  );
+};
+
+export default FetchAPIExample;
