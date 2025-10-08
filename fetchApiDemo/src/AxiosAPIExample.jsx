@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-const url = "https://jsonplaceholder.typicode.com/users";
-
+// const url = "https://jsonplaceholder.typicode.com/users";
+const reqresURL = "https://reqres.in/api/users?page=2";
 const AxiosAPIExample = () => {
   const [users, setUsers] = useState([]);
   const urlHandler = async () => {
